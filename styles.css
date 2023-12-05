@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #007bff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.insider{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.head {
+    text-align: center;
+    font-family: Playfair;
+    font-size: 50px;
+     color: white;
+    opacity: 0.7;
+}
+
+.add-task {
+    
+    display: flex;
+   
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: medium;
+    color: white;
+    border: 1px solid #ccc;
+    background-color: black;
+    border-radius: 20px 0 0 20px;
+    height: 30px;
+}
+
+.add-task button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    display: flex;
+    height: 51px;
+    align-items: center;
+    border-radius: 0 5px 5px 0;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #0056b3;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+
+
+
+.completed {
+    text-decoration: line-through;
+    color: #555;
+}
+
+#ok {
+    background-color: red;
+}
+
+
+
+.in-btn {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: 0.2s;
+  margin: auto 10px;
+}
+
+.in-btn:hover {
+  letter-spacing: 0.2rem;
+  padding: 10px 10px;
+  background: var(--clr);
+  color: var(--clr);
+  margin: auto 10px;
+  animation: box 3s infinite;
+}
+
+.in-btn::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+.in-btn span {
+  position: relative;
+  z-index: 1;
+}
+.in-btn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.in-btn i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.in-btn:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.in-btn i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.in-btn:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+
+
+
+
+.top-item {
+    width: 100%; 
+    max-width: 250px; 
+    box-sizing: content-box;
+    padding: 10px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px black;
+    
+}
