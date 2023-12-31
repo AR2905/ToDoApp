@@ -221,3 +221,37 @@ li {
     box-shadow: 2px 2px 7px black;
     
 }
+
+@media only screen and (max-width: 600px) {
+        /* Adjustments for small screens */
+        .container {
+            padding: 10px;
+        }
+
+        .insider {
+            padding: 10px;
+        }
+
+        .add-task {
+            flex-direction: column;
+        }
+
+        input[type="text"] {
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .add-task button {
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .task-list h2 {
+            font-size: 16px;
+        }
+
+        .in-btn {
+            padding: 8px 12px;
+            margin: 5px 0;
+        }
+    }
